@@ -3,12 +3,12 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="fixed bottom-2  h-[50px] bg-[#212529] 
-      w-[90%] ml-4 rounded-lg  
-      shadow-[inset_0px_-2px_2px_grey]">
-        <div className="flex -row space-x-12 ml-8 text-[#ffff] mt-2 ">
+      <div className="fixed bottom-0  h-[50px] bg-[#ffff] 
+      w-[100%] rounded-lg  
+      shadow-lg">
+        <div className="flex -row space-x-12 ml-8 text-[#212529] mt-2 ">
           <svg
-            className="w-8 h-8 ml-3"
+            className="w-8 h-8 ml-6"
             fill="none"
             stroke="currentColor"
             stroke-width="1.5"
@@ -23,7 +23,7 @@ const Navbar = () => {
             ></path>
           </svg>
           <svg
-            className="w-8 h-8 ml-3"
+            className="w-8 h-8 ml-6"
             fill="none"
             stroke="currentColor"
             stroke-width="1.5"

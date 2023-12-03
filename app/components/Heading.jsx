@@ -6,22 +6,7 @@ const Heading = () => {
       <div className="h-12 bg-[#212529] flex flex-row">
         <p className=" p-2 text-xl font-bold text-white">ACME</p>
         <svg
-        className="text-white h-7 w-7 ml-[13rem] mt-2"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-          ></path>
-        </svg>
-        <svg
-          className="w-7 h-7 text-white ml-[1.5rem] mt-2.5"
+          className="w-7 h-7 text-white ml-[16rem] mt-2.5"
           fill="none"
           stroke="currentColor"
           stroke-width="1.5"
