@@ -2,7 +2,7 @@ import React from "react";
 
 const Heading = () => {
   return (
-    <div>
+    <div className="fixed w-[100%]">
       <div className="h-12 bg-[#212529] flex flex-row">
         <p className=" p-2 text-xl font-bold text-white">ACME</p>
         <svg
@@ -13,6 +13,8 @@ const Heading = () => {
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
+      
+      
         >
           <path
             stroke-linecap="round"

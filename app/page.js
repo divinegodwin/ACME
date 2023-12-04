@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import { Searchbar } from "./components/Searchbar";
 import styles from "./page.module.css";
 
@@ -32,28 +33,29 @@ export default function Home() {
     <div>
       <Searchbar />
 
-      <img src="/image1.jpg" className="h-[500px] mt-2"></img>
+      <img src="/image1.jpg" className="h-[500px] mt-8"></img>
 
       <div className="mt-12 shadow-lg ">
         <p className="text-xl font-bold pl-5 pb-6">Category</p>
       </div>
 
-      <div className="mt-8 ml-16 rounded-lg">
+      <div className="mt-8 ml-16 mb-[6rem]">
         {images.map((image) => (
           <div className="w-[80%] flex flex-col gap-10 mt-12 rounded-lg">
             <img
               src={image[`img${image.id}`]}
               key={image.id}
               alt={image.alt}
-              className="w-[250px] h-[250px]"
+              className="w-[250px] h-[250px] rounded-lg"
             ></img>
-            <button className="w-[250px] h-[40px] text-lg bg-[#00296B]
-             text-white mt-[-2rem] rounded-lg">
-              see more
-            </button>
+            <Button className="w-[250px] h-[40px] text-lg bg-[#00296B]
+             text-white rounded-lg" label="see more" >see more</Button>
+
           </div>
         ))}
+
       </div>
+
     </div>
   );
 }
