@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="w-[100%] h-[200px] bg-[#212529]">
+    <div className="w-[100%] h-[200px] bg-[#212529] b-2">
       <div className="text-white flex flex-row gap-10 mt-[4rem] ml-[7rem]" >
         <svg
           xmlns="http://www.w3.org/2000/svg"

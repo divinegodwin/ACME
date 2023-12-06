@@ -1,6 +1,9 @@
 import Button from "./components/Button";
 import { Searchbar } from "./components/Searchbar";
 import styles from "./page.module.css";
+import Heading from "./components/Heading";
+import { Footer } from "./Footer";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const images = [
@@ -31,12 +34,13 @@ export default function Home() {
 
   return (
     <div>
+        <Heading/>
       <Searchbar />
 
       <img src="/image1.jpg" className="h-[500px] mt-8"></img>
 
       <div className="mt-12 shadow-lg ">
-        <p className="text-xl font-bold pl-5 pb-6">Category</p>
+        <p className="text-xl font-bold pl-5 pb-6">SHOP FROM OUR COLLECTIONS</p>
       </div>
 
       <div className="mt-8 ml-16 mb-[6rem]">
@@ -49,12 +53,14 @@ export default function Home() {
               className="w-[250px] h-[250px] rounded-lg"
             ></img>
             <Button className="w-[250px] h-[40px] text-lg bg-[#00296B]
-             text-white rounded-lg" label="see more" >see more</Button>
+             text-white rounded-lg" label="see more" ></Button>
 
           </div>
         ))}
 
       </div>
+      <Footer/>
+ <Navbar/>
 
     </div>
   );

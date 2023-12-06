@@ -1,15 +1,41 @@
+'use client'
+
 import React from "react";
 import Navbar from "../components/Navbar";
-import Heading from "../components/Heading";
+import { useState } from "react";
 
- const Product = () => {
+const Product = () => {
+  const categories = ["Trousers", "Caps", "Hoodies", "Shirts", "Shorts"];
+
+  const [clickedElement, setClickedElement] = useState(null);
+
+  function checkClick(e){
+    setClickedElement(e)
+  }
+
+
   return (
     <div>
-      <Heading />
+      <div className="shadow-lg mb-2">
+        <p className="text-black pt-4 pl-4 pb-4 font-bold">CATEGORIES</p>
+      </div>
 
-      <div>
-    
-        <p className='text-black'>CATEGORIES</p>
+<div className="">
+      <div className="fixed w-[90px] h-[100%] bg-[#E9ECEF]">
+  
+      <ul className="flex gap-20 flex-col">
+        {
+      categories.map((category)=>( 
+        <li key={category}
+        className={`pt-4 pl-2 ${clickedElement? "text-white": "text-black" }`}
+        onClick={checkClick}>
+            {category}
+        </li>
+      ))
+    }
+    </ul>
+    </div>
+
 
       </div>
 
