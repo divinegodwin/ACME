@@ -52,6 +52,7 @@ export default function Home() {
               alt={image.alt}
               className="w-[250px] h-[250px] rounded-lg"
             ></img>
+            
             <Button className="w-[250px] h-[40px] text-lg bg-[#00296B]
              text-white rounded-lg" label="see more" ></Button>
 
